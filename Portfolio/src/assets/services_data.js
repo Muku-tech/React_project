@@ -1,33 +1,17 @@
 const Services_Data = [
     {
-        s_no:"01",
-        s_name:"Web design",
-        s_desc:"Web development is the process of building, programming..."
+        id: 1,
+        Title:"+2 in Science",
+        Date:"2020-2022",
+        College:"Kathmandu Bernhardt College,Balkhu",
+        GPA:"3.24"
     },
     {
-        s_no:"02",
-        s_name:"Graphics design",
-        s_desc:"Web development is the process of building, programming..."
-    },
-    {
-        s_no:"03",
-        s_name:"Social media",
-        s_desc:"Web development is the process of building, programming..."
-    },
-    {
-        s_no:"04",
-        s_name:"App design",
-        s_desc:"Web development is the process of building, programming..."
-    },
-    {
-        s_no:"05",
-        s_name:"Digital marketing",
-        s_desc:"Web development is the process of building, programming..."
-    },
-    {
-        s_no:"06",
-        s_name:"Content writing",
-        s_desc:"Web development is the process of building, programming..."
+        id: 2,
+        Title:"Bachelors in Bsc.CSIT",
+        Date:"2022-Present",
+        College:"Kathmandu Bernhardt College,Bafal",
+        GPA:"Null"
     },
 ]
  
