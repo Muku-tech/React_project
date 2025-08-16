@@ -1,8 +1,25 @@
-.navbar{
+/* .navbar{
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin: 20px 170px;
+} */
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #161513;
+    padding: 10px 20px;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    height: 200px;
 }
 .nav-menu{
     display: flex;
