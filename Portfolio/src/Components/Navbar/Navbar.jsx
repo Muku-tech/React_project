@@ -5,6 +5,7 @@ import underline from '../../assets/nav_underline.svg'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 import menu_open from '../../assets/menu_open.svg'
 import menu_close from '../../assets/menu_close.svg'
+import {motion, useScroll} from 'motion/react'
 
 const Navbar = () => {
 
@@ -17,9 +18,15 @@ const Navbar = () => {
   const closeMenu=()=>{
     menuRef.current.style.right="-350px"
   }
+  
+  const {scrollYProgress}=useScroll();
 
   return (
+    <>
+   
     <div className='navbar'>
+         
+      
         <img className='logo' src={logo} alt="" />
         <img src={menu_open} alt="" onClick={openMenu} className='nav-mob-open'/>
         <ul ref={menuRef} className="nav-menu">
@@ -34,6 +41,9 @@ const Navbar = () => {
         <div className="nav-connect"><AnchorLink className='anchor-link' offset={50} href='#contact'>Connect with me</AnchorLink></div>
       
     </div>
+      <motion.div className="box" style={{scaleX:scrollYProgress}}></motion.div>
+
+    </>
   )
 }
 

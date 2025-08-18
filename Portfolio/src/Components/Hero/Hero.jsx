@@ -3,12 +3,17 @@ import './Hero.css'
 import profile_img from '../../assets/profile-pic.png'
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import CV from '../../assets/CV.pdf'
+import {motion} from 'motion/react'
 
 const Hero = () => {
   return (
   
     <div id='home' className='hero'>
-       <img src={profile_img} alt="" height={250}/>
+       <motion.img 
+       whileHover={{
+        scale: 1.1,
+       }}
+       src={profile_img} alt="" height={250}/>
        <h1><span>I'am Mukunda Mahat,</span> frontend developer.</h1>
        <p>I am currently a Bsc.CSIT student and a frontend developer.I love doing these stuffs and this is how I would like to showcase my portfolio.</p>
        <div className="hero-action">
