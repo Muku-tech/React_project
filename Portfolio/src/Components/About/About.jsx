@@ -2,6 +2,7 @@ import React from 'react'
 import './About.css'
 import theme_pattern from '../../assets/theme_pattern.svg'
 import profile_img from '../../assets/About_profile.jpg'
+import {motion} from 'motion/react'
 
 
 const About = () => {
@@ -12,7 +13,17 @@ const About = () => {
             {/* <img className='head' src={theme_pattern} alt="" /> */}
             <div className="about-section">
                 <div className="about-left">
-                    <img src={profile_img} alt="" height={500}/>
+                    <motion.img 
+                    initial={{
+                        opacity:0
+                    }}
+                    whileInView={{
+                        opacity:1
+                    }}
+                    transition={{
+                        duration:5
+                    }}
+                    src={profile_img} alt="" height={500}/>
                 </div>
                 <div className="about-right">
                     <div className="about-paragraph">

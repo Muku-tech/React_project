@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import './Hero.css'
 import profile_img from '../../assets/profile-pic.png'
 import AnchorLink from 'react-anchor-link-smooth-scroll';
@@ -6,11 +6,14 @@ import CV from '../../assets/CV.pdf'
 import {motion} from 'motion/react'
 
 const Hero = () => {
+  
+
   return (
   
     <div id='home' className='hero'>
        <motion.img 
        whileHover={{
+        rotate:360,
         scale: 1.1,
        }}
        src={profile_img} alt="" height={250}/>
